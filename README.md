@@ -36,14 +36,16 @@ Aplicación web sencilla con patrón MVC para gestionar reservas de canchas depo
 
 ## Documentación adicional
 
-- `docs/DEFENSA_TECNICA.md`: defensa técnica del proyecto.
-- `docs/PROMPTS_USADOS.md`: prompts y evidencias usadas durante el desarrollo.
-- `docs/COMMITS_PROGRESIVOS.md`: lista de commits progresivos y su propósito.
+- `docs/README.md`: índice de la documentación.
+- `docs/defensa/DEFENSA_TECNICA.md`: defensa técnica del proyecto.
+- `docs/prompts/PROMPTS_USADOS.md`: prompts y evidencias usadas durante el desarrollo.
+- `docs/commits/COMMITS_PROGRESIVOS.md`: lista de commits progresivos y su propósito.
+- `docs/desarrollo/DESARROLLO_POR_ETAPAS.md`: desarrollo por etapas y descripción de cada fase.
 - `docs/LEEME_PRIMERO.txt`: instrucciones rápidas de inicio.
-- `docs/DESARROLLO_POR_ETAPAS.md`: desarrollo por etapas y descripción de cada fase.
 
 ## Cómo usar la documentación
 
-- Para ver los prompts y el contexto del desarrollo, abre `docs/PROMPTS_USADOS.md`.
-- Para seguir los commits progresivos, abre `docs/COMMITS_PROGRESIVOS.md`.
-- Para entender el flujo iterativo de construcción, abre `docs/DESARROLLO_POR_ETAPAS.md`.
+- Para ver los prompts y el contexto del desarrollo, abre `docs/prompts/PROMPTS_USADOS.md`.
+- Para seguir los commits progresivos, abre `docs/commits/COMMITS_PROGRESIVOS.md`.
+- Para entender el flujo iterativo de construcción, abre `docs/desarrollo/DESARROLLO_POR_ETAPAS.md`.
+- Para navegar por la documentación en GitHub, abre `docs/README.md`.
