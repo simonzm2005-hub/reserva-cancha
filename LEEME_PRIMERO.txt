@@ -1,0 +1,14 @@
+CANCHARESERVA - INICIO RAPIDO
+
+1. Extrae el ZIP.
+2. Abre la carpeta.
+3. Dale doble clic a:
+
+INICIAR_APP.bat
+
+4. Espera unos segundos.
+5. Abre en el navegador:
+
+http://127.0.0.1:5000
+
+LISTO.
