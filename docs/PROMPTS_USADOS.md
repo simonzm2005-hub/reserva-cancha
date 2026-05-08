@@ -34,8 +34,8 @@ Este documento documenta los prompts utilizados para guiar la construcción iter
 ## Prompt 6: Commits
 "Dame una lista de commits progresivos para evidenciar el desarrollo por etapas de una aplicación web."
 
-- Resultado: lista de commits con mensajes descriptivos y transferencia a la documentación.
-- Se siguió un enfoque de desarrollo por etapas: estructura, modelo, servicio, controlador, vista y documentación.
+- Resultado: definición de un enfoque de desarrollo por etapas.
+- La lista de commits se documentó por separado en `docs/COMMITS_PROGRESIVOS.md`.
 
 ## Contexto de construcción iterativa
 

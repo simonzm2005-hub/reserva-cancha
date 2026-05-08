@@ -31,14 +31,7 @@ Este proyecto se desarrolló en etapas progresivas y documentadas con commits de
 
 ## Mensajes de commits recomendados
 
-- `1. Crear estructura inicial del proyecto`
-- `2. Agregar modelo Cancha`
-- `3. Agregar modelo Reserva`
-- `4. Crear servicio de reservas`
-- `5. Crear controlador principal`
-- `6. Crear vista de inicio`
-- `7. Crear formulario de reserva`
-- `8. Mostrar lista de reservas`
-- `9. Agregar validaciones y lógica de precio`
-- `10. Organizar documentación en docs/`
-- `11. Añadir .gitignore y scripts de inicio`
+Los mensajes de los commits se documentan en detalle en `docs/COMMITS_PROGRESIVOS.md`.
+
+- Este archivo describe las etapas principales del desarrollo.
+- El documento de commits separa cada avance con un mensaje claro y específico.
