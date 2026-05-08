@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CanchaReserva</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">⚽ CanchaReserva</div>
+        <div>
+            <a href="{{ url_for('reserva.inicio') }}">Inicio</a>
+            <a href="{{ url_for('reserva.reservar') }}">Reservar</a>
+            <a href="{{ url_for('reserva.reservas') }}">Reservas</a>
+            <a href="{{ url_for('reserva.disponibilidad') }}">Disponibilidad</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

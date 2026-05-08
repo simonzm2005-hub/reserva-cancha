@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Sistema de Reservas de Canchas</h1>
+    <p>Reserva canchas deportivas de forma rápida, sencilla y organizada.</p>
+    <a class="btn" href="{{ url_for('reserva.reservar') }}">Crear reserva</a>
+</section>
+
+<h2>Canchas disponibles</h2>
+<div class="cards">
+    {% for cancha in canchas %}
+    <div class="card">
+        <h3>{{ cancha.nombre }}</h3>
+        <p><strong>Tipo:</strong> {{ cancha.tipo }}</p>
+        <p><strong>Precio por hora:</strong> ${{ "{:,}".format(cancha.precio_hora).replace(",", ".") }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
