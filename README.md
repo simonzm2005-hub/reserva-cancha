@@ -72,7 +72,20 @@ http://127.0.0.1:5000
 - Controlador: `app/controllers/`
 - Servicio/lógica: `app/services/`
 
-## Commits sugeridos
+## Organización de archivos
+
+- Documentación principal: `README.md`
+- Documentación adicional: `docs/`
+- Scripts de utilidad: `scripts/`
+
+## Documentación adicional
+
+- `docs/DEFENSA_TECNICA.md`: defensa técnica del proyecto.
+- `docs/PROMPTS_USADOS.md`: prompts y evidencias usadas durante el desarrollo.
+- `docs/LEEME_PRIMERO.txt`: instrucciones rápidas de inicio.
+- `docs/DESARROLLO_POR_ETAPAS.md`: desarrollo por etapas y mensajes de commit sugeridos.
+
+## Commits recomendados
 
 1. Crear estructura inicial del proyecto.
 2. Agregar modelo Cancha.
@@ -82,7 +95,7 @@ http://127.0.0.1:5000
 6. Crear vista de inicio.
 7. Crear formulario de reserva.
 8. Mostrar lista de reservas.
-9. Agregar cancelación de reservas.
-10. Agregar validaciones y cálculo de precio.
-11. Mejorar estilos visuales.
-12. Agregar documentación y prompts usados.
+9. Agregar validaciones y cálculo de precio.
+10. Organizar documentación en `docs/`.
+11. Añadir `scripts/INICIAR_APP.bat` y `.gitignore`.
+12. Refinar estilo y ajustes finales.
