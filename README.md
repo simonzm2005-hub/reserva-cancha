@@ -19,51 +19,7 @@ Aplicación web sencilla con patrón MVC para gestionar reservas de canchas depo
 - CSS
 - Almacenamiento en memoria
 
-## Cómo ejecutar en VS Code
 
-1. Abre la carpeta del proyecto.
-2. Abre una terminal.
-3. Crea un entorno virtual:
-
-```bash
-python -m venv .venv
-```
-
-4. Activa el entorno virtual en Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-Si PowerShell bloquea la activación, usa:
-
-```bash
-.venv\Scripts\Activate.ps1
-```
-
-o ejecuta:
-
-```bash
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
-
-5. Instala Flask:
-
-```bash
-pip install -r requirements.txt
-```
-
-6. Ejecuta la aplicación:
-
-```bash
-python run.py
-```
-
-7. Abre en el navegador:
-
-```text
-http://127.0.0.1:5000
-```
 
 ## Estructura MVC
 
