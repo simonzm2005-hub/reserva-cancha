@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Consultar disponibilidad</h1>
+
+<form method="POST" class="form">
+    <label>Cancha</label>
+    <select name="cancha_id" required>
+        {% for cancha in canchas %}
+        <option value="{{ cancha.id }}">{{ cancha.nombre }} - {{ cancha.tipo }}</option>
+        {% endfor %}
+    </select>
+
+    <label>Fecha</label>
+    <input type="date" name="fecha" required>
+
+    <label>Hora</label>
+    <input type="time" name="hora" required>
+
+    <button class="btn" type="submit">Consultar</button>
+</form>
+
+{% if resultado %}
+<div class="resultado">
+    <h2>Resultado</h2>
+    <p><strong>Cancha:</strong> {{ resultado.cancha.nombre }} - {{ resultado.cancha.tipo }}</p>
+    <p><strong>Fecha:</strong> {{ resultado.fecha }}</p>
+    <p><strong>Hora:</strong> {{ resultado.hora }}</p>
+
+    {% if resultado.disponible %}
+    <p class="available">Disponible para reservar.</p>
+    {% else %}
+    <p class="not-available">No disponible en ese horario.</p>
+    {% endif %}
+</div>
+{% endif %}
+{% endblock %}

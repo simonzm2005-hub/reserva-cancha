@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Crear reserva</h1>
+
+<form method="POST" class="form">
+    <label>Nombre del cliente</label>
+    <input type="text" name="cliente" placeholder="Ej: Simón Zapata" required>
+
+    <label>Teléfono</label>
+    <input type="text" name="telefono" placeholder="Ej: 3001234567" required>
+
+    <label>Cancha</label>
+    <select name="cancha_id" required>
+        {% for cancha in canchas %}
+        <option value="{{ cancha.id }}">{{ cancha.nombre }} - {{ cancha.tipo }} - ${{ "{:,}".format(cancha.precio_hora).replace(",", ".") }}/hora</option>
+        {% endfor %}
+    </select>
+
+    <label>Fecha</label>
+    <input type="date" name="fecha" required>
+
+    <label>Hora</label>
+    <input type="time" name="hora" required>
+
+    <label>Duración en horas</label>
+    <input type="number" name="duracion" min="1" value="1" required>
+
+    <button class="btn" type="submit">Guardar reserva</button>
+</form>
+{% endblock %}
