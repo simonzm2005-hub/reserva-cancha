@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Reservas registradas</h1>
+
+{% if reservas %}
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Teléfono</th>
+            <th>Cancha</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Duración</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for reserva in reservas %}
+        <tr>
+            <td>{{ reserva.id }}</td>
+            <td>{{ reserva.cliente }}</td>
+            <td>{{ reserva.telefono }}</td>
+            <td>{{ reserva.cancha_nombre }}</td>
+            <td>{{ reserva.fecha }}</td>
+            <td>{{ reserva.hora }}</td>
+            <td>{{ reserva.duracion }} hora(s)</td>
+            <td>${{ "{:,}".format(reserva.total).replace(",", ".") }}</td>
+            <td>
+                <span class="estado {{ reserva.estado.lower() }}">{{ reserva.estado }}</span>
+            </td>
+            <td>
+                {% if reserva.estado == "Activa" %}
+                <a class="btn-small danger" href="{{ url_for('reserva.cancelar', reserva_id=reserva.id) }}">Cancelar</a>
+                {% else %}
+                -
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No hay reservas registradas.</p>
+{% endif %}
+{% endblock %}
